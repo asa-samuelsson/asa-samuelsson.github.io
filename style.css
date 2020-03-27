@@ -108,7 +108,7 @@ a {
   line-height: 1.15;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
-  font-size: inherit;
+  font-size: 100%;
 }
 
 .text ul {
