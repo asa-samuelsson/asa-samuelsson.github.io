@@ -76,7 +76,7 @@ h1 {
 
 
 
-.small {
+.small, .small a {
   font-size: 14px;
 }
 
@@ -108,7 +108,7 @@ a {
   line-height: 1.15;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 20px;
 }
 
 .text ul {
