@@ -19,80 +19,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
 }
-.small {
-  font-size: 14px;
-}
-h2 {
-  position: relative;
-  display: block;
-  z-index: 0;
-  font-size: 40px;
-  padding: 30px 0 0;
-  margin:0 auto;
-  text-align: center;
-  text-transform: uppercase;
-  display: none;
-}
-h2 img {
-  display: block;
-  position: relative;
-  width:85vw;
-  max-width: 420px;
-  min-width:280px;
-  margin: 0 auto 20px;
-}
-.photos h2 {
-  color:#fff;
-}
-h3 {
-  line-height: 1.25;
-  margin-bottom: 20px;
-  display: block;
-}
-p {
-  margin:1em 0;
-  font-weight: 300;
-}
-ul {
-  list-style: none;
-  margin: 32px 0 0;
-  padding: 14px 0;
-  display: flex;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font-weight: 300;
-}
-li {
-  width:auto;
-  font-size: 14px;
-  padding: 0 20px 0 0;
-  margin: 0 20px 0 0;
-}
-.text ul {
-  justify-content: center;
-}
-.text li {
-  border-right: 1px solid #ddd;
-}
-.text li:first-child {
-  font-weight: 700;
-}
-.text li:last-child {
-  border-right: 0;
-  margin:0;
-  padding:0;
-}
-a {
-  color: #333;
-  display: inline-block;
-  line-height: 1.15;
-  border-bottom: 1px solid #ddd;
-  text-decoration: none;
-}
-.nav a {
-  color:#fff;
-  border-color: #666;
-}
+
 
 #header {
   position: absolute;
@@ -104,7 +31,7 @@ a {
   height:100vh;
   min-height: 550px;
   padding-bottom: 20px;
-  margin-bottom: -50px;
+  margin-bottom: -98px;
 }
 .topimage {
   background: url(surtees.jpg);
@@ -114,24 +41,17 @@ a {
   z-index:0;
   filter: grayscale();
 }
-h1 {
-  position: relative;
-  top: 50%;
-  display: block;
-  width: 320px;
-  margin: -120px auto 0;
-}
-ul.nav {
+.nav {
   position: absolute;
   color:#fff;
-  top: -40px;
+  top: -20px;
+  padding:0;
   width: 100vw;
-  border: 0;
   z-index: 3;
   display: block;
   text-align: center;
 }
-ul.nav li {
+.nav li {
   display: inline-block;
   font-weight: 300;
   font-size: 12px;
@@ -142,11 +62,68 @@ ul.nav li {
   padding: 10px;
   margin: 0;
 }
+.nav a {
+  color:#fff;
+  border-color: #666;
+}
+h1 {
+  position: relative;
+  top: 50%;
+  display: block;
+  width: 320px;
+  margin: -120px auto 0;
+}
+
+
+
+.small {
+  font-size: 14px;
+}
+
+h3 {
+  line-height: 1.25;
+  margin-bottom: 20px;
+  display: block;
+}
+p {
+  margin:1em 0;
+  font-weight: 300;
+}
 p span {
   text-transform: uppercase;
   font-weight: 500;
   color:#222;
 }
+ul {
+  list-style: none;
+  font-weight: 300;
+}
+li {
+  width:auto;
+  font-size: 14px;
+}
+a {
+  color: #333;
+  display: inline-block;
+  line-height: 1.15;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+}
+
+.text ul {
+  justify-content: center;
+  min-width: 160px;
+  margin:24px 0 0 40px;
+  padding-left: 40px;
+  border-left: 1px solid #ddd;
+}
+.text ul li {
+  display: block;
+}
+.text ul li:first-child {
+  font-weight: 700;
+}
+
 .photos, .story {
   position: relative;
   z-index: 1;
@@ -155,162 +132,100 @@ p span {
   max-width: 1100px;
   padding-top: 0;
   padding-bottom: 60px;
-  overflow: hidden;
+}
+.text {
+  padding: 10px 40px 20px;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  display: flex;
+  position: relative;
+  z-index: 1;
 }
 .story .text {
   position: relative;
   z-index: 1;
-  background: #fff;
+  max-width: 1000px;
+  background: rgba(255,255,255,0.9);
+}
+.story .text div {
+  width: 50%;
   padding: 20px 40px 50px;
 }
-.text {
-  padding: 20px 40px;
-  max-width: 600px;
-  margin: 30px auto 40px;
-}
+
 .photo {
-  position: relative;
+  display: block;
 }
 .photo img {
   display: block;
   width: 100vw;
-  max-width: 600px;
+  max-width: 800px;
   margin:0 auto;
-  outline: 10px solid #fff;
 }
+#image2 .photo img {
+  max-width: 530px;
+}
+
+
 .info {
   margin: 0 auto;
   background: #fff;
-  padding: 40px 0 80px;
+  padding: 80px 0;
 }
 .info .text {
-  align-items: baseline;
-}
-.topimage, .image img, .info {
-  box-shadow: 1px 4px 10px rgba(0,0,0,0.02);
-}
-.image {
-  position: relative;
-  z-index: 1;
-  margin: 40px auto 80px;
+  display: block;
 }
 
-@media only screen and (max-width: 680px) {
-  .photos {
-    padding:0;
-    top:-30px;
-  }
-  .photo img {
-    max-width: 680px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .text li {
-    padding:0 12px 0 0;
-    margin:0 12px 0 0;
-  }
-  h2 img {
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .text {
-    padding: 0 30px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  .text {
-    padding: 0 20px;
-  }
-  .text li {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .text ul {
-    justify-content: flex-start;
-  }
-  h1 + p {
-    bottom: 2vh;
-  }
-  ul.nav {
-    text-align: left;
-    margin: 24px 0;
-  }
-  .story {
-    margin: 0 auto 40px;
-    position: relative;
-    z-index: 3;
-  }
-  .story .text {
+@media only screen and (min-width: 900px) {
+  #image2 {
     display: flex;
-    margin:0 auto;
-    width: 1000px;
-    max-width: 100vw;
-  }
-  .story .text div {
-    width: 50%;
-    padding: 0 30px;
-  }
-  .image {
-    display: flex;
-    width:1000px;
-    margin: 60px auto 120px;
-    justify-content: center;
-  }
-  .image div {
-    align-self: flex-end;
-  }
-  .image img {
-    width: 50vw;
-    max-width: 600px;
-    border: 10px solid #fff;
-    outline: none;
-  }
-  .image .photo {
-    background: #fff;
-  }
-  #image2 img {
-    max-height: 600px;
-    width: auto;
+    align-items: center;
+    margin-bottom: 130px;
+    padding:0 40px;
   }
   #image2 .text {
-    align-self: center;
+    display: block;
+    margin:0;
+    max-width: 500px;
+    padding-right:0;
   }
-  .image .text {
-    min-width: 380px;
-    padding:0 10px 0 40px;
-    max-width: 360px;
-  }
-  #image2 .text, #image4 .text, #image6 .text {
-    order: -1;
-    padding:0 40px 0 10px;
-  }
-  .text ul {
-    margin-left: -10px;
-    padding-left:10px;
+  #image2 .text ul {
+    padding-left: 0;
+    margin: 30px 0;
+    border-left: 0;
   }
 }
 
-@media only screen and (min-width: 1400px) {
-  .photos, .story {
-    overflow: visible;
+@media only screen and (max-width: 900px) {
+  .story .text {
+    display: block;
+    background: #fff;
+    padding:40px 40px 80px;
   }
-  .photo {
-    border: 12px solid #333;
-    border-bottom-color: #111;
-    border-right-color: #111;
-    padding: 70px;
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.2)
+  .story .text div {
+    width:auto;
+    max-width:600px;
+    padding:0;
+    margin: 0 auto;
   }
-  .photo img {
-    border: 4px solid #f7f7f7;
-    border-bottom-color: #f9f9f9;
-    border-right-color: #f9f9f9;
+  .text ul {
+    min-width: 120px;
   }
-  .image .text {
-    margin: 0 30px;
+}
+
+@media only screen and (max-width: 800px) {
+  .story .text {
+    margin-bottom: -60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .text ul {
+    padding-left: 0;
+    margin: 30px 0;
+    border-left: 0;
   }
 }
