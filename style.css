@@ -97,9 +97,11 @@ li {
   width:auto;
   font-size: 14px;
 }
+.fine {
+  font-size: 14px;
+}
 a {
   color: #333;
-  display: inline-block;
   line-height: 1.15;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
