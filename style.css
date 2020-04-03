@@ -109,6 +109,10 @@ a {
   text-decoration: none;
   font: inherit;
 }
+.photos a:hover,
+.info a:hover  {
+  border-color:#BBCEDB;
+}
 
 .text ul {
   justify-content: center;
