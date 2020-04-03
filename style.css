@@ -71,11 +71,13 @@ h1 {
   display: block;
   width: 320px;
   margin: -120px auto 0;
+  color:#fff;
 }
 h2 {
   display: none;
 }
 h3 {
+  font-size: 28px;
   line-height: 1.25;
   margin-bottom: 20px;
   display: block;
@@ -183,6 +185,16 @@ a {
   float:left;
   line-height: 1;
   margin: -5px 10px -10px 0;
+}
+
+.divider {
+  font-family: "Bungee Outline";
+  text-align: center;
+  position: relative;
+  top:-70px;
+  font-size: 100px;
+  line-height: 38px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 900px) {
