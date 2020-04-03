@@ -159,7 +159,7 @@ a {
   width: 100vw;
   max-width: 800px;
   margin:0 auto 30px;
-  outline: 20px solid #fff;
+  outline: 16px solid #fff;
   box-shadow: 4px 8px 30px rgba(6,21,32,.5);
 }
 #image2 .photo img {
