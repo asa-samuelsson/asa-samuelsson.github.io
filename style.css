@@ -191,16 +191,6 @@ a {
   margin: -5px 10px -10px 0;
 }
 
-.divider {
-  font-family: "Bungee Outline";
-  text-align: center;
-  position: relative;
-  top:-70px;
-  font-size: 100px;
-  line-height: 38px;
-  margin-bottom: 30px;
-}
-
 @media only screen and (min-width: 900px) {
   #image2 {
     display: flex;
@@ -251,7 +241,7 @@ a {
 @media only screen and (max-width: 600px) {
   .text {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
   .text ul {
     padding-left: 0;
